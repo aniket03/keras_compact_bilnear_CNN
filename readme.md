@@ -11,10 +11,13 @@ categorization.
 2. Download the VGG16 weights file from [here](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5)
    in the working directory
 3. For training only the last fully connected layer of the network, use
-    `python train_cbcnn_last.py`
+    `python train_cbcnn_last.py 0  # If training without GPU`
+    `python train_cbcnn_last.py 1  # If training with GPU`
 4. For training the complete net after the last layer has been tuned, use:
-    `python train_cbcnn_all.py`
-
+    `python train_cbcnn_all.py 0  # If training without GPU`
+    `python train_cbcnn_all.py 0  # If training with GPU`
+5. For testing the trained model, run
+    `python test_model.py`
 
 ## More on Applications of Compact bilinear CNN
 At [Squad](https://www.squadplatform.com/), we further utilized Compact bilinear CNN for solving complex use cases

@@ -5,3 +5,4 @@ __pycache__
 myenv
 db.sqlite3
 .DS_Store
+.idea
